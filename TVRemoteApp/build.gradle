@@ -1,0 +1,22 @@
+// TVRemoteApp/build.gradle
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle Plugin
+        classpath 'com.android.tools.build:gradle:8.0.2'
+        
+        // Kotlin Gradle Plugin (Important for 'org.jetbrains.kotlin.android')
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0'
+    }
+}
+
+// Make sure all projects can access the same repositories
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
